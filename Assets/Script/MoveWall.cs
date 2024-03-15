@@ -4,15 +4,10 @@ using UnityEngine;
 
 public class MoveWall : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public float WallMoveSpeed;
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        
+        transform.position += Vector3.left * WallMoveSpeed * Time.deltaTime;
     }
 }
